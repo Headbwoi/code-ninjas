@@ -7,10 +7,244 @@
     <meta name="description" content="Frontend coding challenge" />
     <title>ALMIRON TASK 1 - CODE NINJAS</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main>lorem 10</main>
-    <footer></footer>
-    <script src="/scripts/script.js"></script>
+    <main>
+      <header>
+        <nav class="nav">
+          <!-- logo -->
+          <div class="nav_logo">
+            <img src="/task-0/assets/purple_paws.svg" alt="pet care" />
+            <p>PetCare</p>
+          </div>
+          <!-- navlinks -->
+
+          <div class="nav_links">
+            <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Services</li>
+              <li>Pet Health</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+
+          <!-- cta -->
+          <div class="nav_cta">
+            <button class="nav_cta_btn">Register</button>
+          </div>
+        </nav>
+      </header>
+
+      <!-- hero section -->
+      <section class="hero_section">
+        <!-- text/left -->
+        <div class="hero_section_left">
+          <h1>
+            Your Pet <img src="/task-0/assets/pink_cat.svg" alt="" /> <br />
+            Our Services
+          </h1>
+          <p>
+            Before you home pet, be sure you are ready to take care of it
+            properly
+          </p>
+
+          <!-- cta(s) -->
+          <div class="hero_section_left_cta">
+            <button class="hero_section_left_cta_one with-gradient">
+              Our Services
+            </button>
+            <button class="hero_section_left_cta_two">Create Schedule</button>
+          </div>
+
+          <!-- infos(s) -->
+          <div class="hero_section_left_stat">
+            <!-- images -->
+            <div class="images">
+              <!-- put 5 images -->
+              <div class="list">
+                <img src="/task-0/assets/profile/1.jpg" alt="" />
+                <img src="/task-0/assets/profile/0.jpg" alt="" />
+                <img src="/task-0/assets/profile/2.jpg" alt="" />
+                <img src="/task-0/assets/profile/5.jpg" alt="" />
+                <img src="/task-0/assets/profile/4.jpg" alt="" />
+              </div>
+            </div>
+            <!-- text -->
+            <div class="text">
+              <h2>12K+</h2>
+              <!-- underline -->
+              <p>See user rating of us to see the quality we provide</p>
+            </div>
+            <img
+              src="/task-0/assets/gray_paws.svg"
+              alt=""
+              aria-hidden="true"
+              class="gray_paws"
+            />
+          </div>
+        </div>
+        <!-- image/right -->
+        <div class="hero_section_right">
+          <img src="/task-0/assets/pet_owner.png" alt="owner" class="owner" />
+          <img src="/task-0/assets/cover_dog.svg" alt="pet" class="pet" />
+
+          <!-- paws  -->
+          <div class="paws">
+            <svg
+              width="209"
+              height="209"
+              viewBox="0 0 209 209"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="pink_cat"
+            >
+              <path
+                d="M117.48 78.3333H124.457C133.473 93.9592 150.364 104.444 169.702 104.444C174.19 104.444 178.596 103.873 182.758 102.812V104.444V117.5V195.833C182.758 203.055 176.924 208.889 169.702 208.889C162.481 208.889 156.647 203.055 156.647 195.833V138.389L101.161 182.778H124.008C131.229 182.778 137.063 188.612 137.063 195.833C137.063 203.055 131.229 208.889 124.008 208.889H65.2579C43.6346 208.889 26.0912 191.345 26.0912 169.722V78.5373C26.0912 71.9687 21.1954 66.3793 14.6676 65.5634L11.4445 65.1554C4.30473 64.2578 -0.795099 57.73 0.10247 50.5903C1.00004 43.4505 7.52782 38.3507 14.6676 39.2483L17.8907 39.6562C37.474 42.1042 52.2023 58.75 52.2023 78.5373V113.339C66.237 92.2456 90.2266 78.3333 117.48 78.3333ZM182.758 89.145C178.678 90.5729 174.272 91.3889 169.702 91.3889C158.116 91.3889 147.671 86.3299 140.49 78.3333C138.981 76.6606 137.635 74.8654 136.451 72.9479C132.698 66.9097 130.536 59.8108 130.536 52.2222V13.0556V4.89583V4.36545C130.536 1.95833 132.453 0.0407986 134.86 0H134.942C136.288 0 137.553 0.652778 138.369 1.71354V1.75434L143.591 8.6901L154.688 23.5L156.647 26.1111H182.758L184.716 23.5L195.813 8.6901L201.036 1.75434V1.71354C201.852 0.652778 203.116 0 204.463 0H204.544C206.951 0.0407986 208.869 1.95833 208.869 4.36545V4.89583V13.0556V52.2222C208.869 59.2804 206.992 65.9306 203.728 71.6424C199.118 79.7205 191.652 86.0035 182.758 89.145ZM163.175 52.2222C163.175 50.4909 162.487 48.8306 161.263 47.6064C160.038 46.3822 158.378 45.6944 156.647 45.6944C154.915 45.6944 153.255 46.3822 152.031 47.6064C150.807 48.8306 150.119 50.4909 150.119 52.2222C150.119 53.9535 150.807 55.6139 152.031 56.8381C153.255 58.0623 154.915 58.75 156.647 58.75C158.378 58.75 160.038 58.0623 161.263 56.8381C162.487 55.6139 163.175 53.9535 163.175 52.2222ZM182.758 58.75C184.489 58.75 186.15 58.0623 187.374 56.8381C188.598 55.6139 189.286 53.9535 189.286 52.2222C189.286 50.4909 188.598 48.8306 187.374 47.6064C186.15 46.3822 184.489 45.6944 182.758 45.6944C181.027 45.6944 179.366 46.3822 178.142 47.6064C176.918 48.8306 176.23 50.4909 176.23 52.2222C176.23 53.9535 176.918 55.6139 178.142 56.8381C179.366 58.0623 181.027 58.75 182.758 58.75Z"
+                fill="#FB8A70"
+              />
+            </svg>
+            <img
+              src="/task-0/assets/gray_paws.svg"
+              alt=""
+              aria-hidden="true"
+              class="gray_paws1"
+            />
+            <img
+              src="/task-0/assets/gray_paws.svg"
+              alt=""
+              aria-hidden="true"
+              class="gray_paws2"
+            />
+            <img
+              src="/task-0/assets/gray_paws.svg"
+              alt=""
+              aria-hidden="true"
+              class="gray_paws3"
+            />
+            <img
+              src="/task-0/assets/gray_paws.svg"
+              alt=""
+              aria-hidden="true"
+              class="gray_paws4"
+            />
+          </div>
+
+          <div class="card">
+            <div class="inner-card">
+              <div class="dog">
+                <img src="/task-0/assets/super_dog1.png" alt="" />
+                <div class="play-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"
+                    width="15"
+                    height="15"
+                  >
+                    <path
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <p>How to take care of your pets</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- features -->
+      <section class="features">
+        <!-- feature left -->
+        <div class="left">
+          <p>Jeffrey Dalhmer</p>
+          <p>jeffrey@gmail.com</p>
+          <button class="with-gradient">
+            See Preview
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                width="15"
+                height="15"
+              >
+                <path
+                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                  fill="#000"
+                />
+              </svg>
+            </span>
+          </button>
+          <img src="/task-0/assets/profile/1.jpg" alt="bulaba" />
+        </div>
+        <!-- feature right -->
+        <div class="right">
+          <div class="inner">
+            <!-- chevron icons -->
+            <div class="left-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+                width="15"
+                height="15"
+              >
+                <path
+                  d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                  fill="#fff"
+                />
+              </svg>
+            </div>
+            <div class="right-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+                width="15"
+                height="15"
+              >
+                <path
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                  fill="#fff"
+                />
+              </svg>
+            </div>
+            <div class="pet">
+              <img src="/task-0/assets/super_dog1.svg" alt="super_dog1" />
+              <div class="text">
+                <p>Super Dog</p>
+                <p>see more</p>
+              </div>
+            </div>
+            <div class="pet">
+              <img src="/task-0/assets/cute_cat.svg" alt="cutecat" />
+              <div class="text">
+                <p>Cute Cat</p>
+                <p>see more</p>
+              </div>
+            </div>
+            <div class="pet">
+              <img src="/task-0/assets/super_dog2.svg" alt="super_dog2" />
+              <div class="text">
+                <p>Super Dog</p>
+                <p>see more</p>
+              </div>
+            </div>
+          </div>
+          <div class="outer">
+            <div class="image">
+              <img src="/task-0/assets/purple_paws.svg" alt="pet care" />
+              <p>PetCare</p>
+            </div>
+            <p>Learn how to take care of your pets with proper guidance.</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
